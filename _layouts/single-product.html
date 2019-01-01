@@ -1,0 +1,32 @@
+---
+related-products: {{page.product_sub_category}}
+---
+
+<!DOCTYPE html>
+<html lang="en">
+{% include head-info-product.html %}
+{% include liquid_data_variables %}
+
+<body class="single-product">
+    <header>
+        {% include nav-bar.html %}
+    </header>
+    <main>
+        <article class="page-content">
+            <h1>{{ page.product_name }}</h1>
+            <img class="product-thumbnail" src="/assets/images/{{page.product_image}}" alt="{{page.product_name}}">
+            <p>Price: ${{ page.product_price }}</p>
+            <p>{{ page.product_description }}</p>
+        </article>
+        <aside class="sidebar" style="border-left: 1px solid;">
+            <h3>Sidebar</h3>
+
+        </aside>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

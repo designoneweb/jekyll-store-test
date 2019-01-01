@@ -1,0 +1,34 @@
+.card {
+  overflow: hidden;
+  font-size: 14px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 10px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card_blockContent {
+  padding: 20px;
+}
+
+.card_blockContent-header h1, .card_blockContent-header h2, .card_blockContent-header h3, .card_blockContent-header h4 {
+  margin: 0;
+  line-height: 1;
+}
+
+.card_blockContent-header p {
+  margin-top: 5px;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card hr {
+  color: #f1f1f1;
+}
+/*# sourceMappingURL=cards.css.map */

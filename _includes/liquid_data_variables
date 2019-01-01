@@ -1,0 +1,5 @@
+{% assign hoodies = site.data.products | where: "product_sub_category","Hoodies" %}
+{% assign t-shirts = site.data.products | where: "product_sub_category","T-Shirts" %}
+{% assign posters = site.data.products | where: "product_sub_category","Posters" %}
+{% assign albums = site.data.products | where: "product_sub_category","Albums" %}
+{% assign singles = site.data.products | where: "product_sub_category","Singles" %}

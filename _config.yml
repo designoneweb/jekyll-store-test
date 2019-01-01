@@ -1,0 +1,7 @@
+# page_gen-dirs: true # uncomment, if you prefer to generate named folders
+
+page_gen:
+  - data: 'products'
+    template: 'single-product'
+    name: 'product_sku'
+    dir: 'products'

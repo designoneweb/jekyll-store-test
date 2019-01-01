@@ -1,0 +1,5 @@
+product_category,product_sub_category,product_name,product_url_name,product_id,product_url,product_price,product_description,product_short_description,product_image,product_quantity
+Pants,Jeans,Blue Jeans,blue-jeans,000001,blue-jeans-000001,6.00,These are new men's stonewashed heavy denim jeans. Made in the USA.,Men's 32 X 34,blue_jeans.jpg,3
+Pants,Jeans,Red Jeans,red-jeans,000002,red-jeans-000002,7.35,These are new women's stonewashed heavy denim jeans. Made in the USA.,Women's 6,red_jeans.jpg,1
+Pants,Shorts,Green Bermudas,green-bermudas,000003,green-bermudas-000003,5.50,These are new men's bermuda shorts. Made in the USA.,Men's 32 X 34,green_shorts.jpg,1
+Pants,Shorts,White Bermudas,white-bermudas,000004,white-bermudas-000004,5.95,These are new women's bermuda shorts. Made in the USA.,Women's 6,white_shorts.jpg,1

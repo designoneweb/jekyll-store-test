@@ -1,0 +1,28 @@
+// General Card Design & Behavior
+.card{
+    overflow: hidden;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .1);
+    &:hover{
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 10px 15px rgba(0, 0, 0, .1);
+    }
+    &_blockContent{
+        padding: 20px;
+        &-header{
+            h1,h2,h3,h4{
+                margin: 0;
+                line-height: 1;
+            }
+            p{
+                margin-top: 5px;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    hr{
+        color: #f1f1f1;
+    }
+}

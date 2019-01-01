@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head-info.html %}
+{% include liquid_data_variables %}
+<script type="text/javascript" src="/js/cat-buttons.js"></script>
+
+
+<body class="product-archive">
+
+    <header>
+        {% include nav-bar.html %}
+    </header>
+    <main>
+        <article class="page-content">
+            <h1>Our Products</h1>
+            <div class="all-product-categories">
+                <div id="hoodies" class="product-sub-category">
+                    <h2>Hoodies</h2>
+                    <div class="product-sub-category_grid">
+                        {% for product in hoodies %}
+                        <div class="product-sub-category_item card card-product">
+                            <img class="product-thumbnail card_blockMedia" src="/assets/images/{{product.product_image}}"
+                                alt="{{product.product_name}}">
+                            <div class="card_blockContent">
+                                <div class="card_blockContent-header">
+                                    <a href="/products/{{product.product_sku}}.html">
+                                        <h3>{{ product.product_name }}</h3>
+                                    </a>
+                                    <p>Price: ${{ product.product_price }}</p>
+                                </div>
+                                <p>
+                                    {{ product.product_short_description }}
+                                </p>
+                                <div class="thumbnail-buttons card_blockCTA">
+                                    <a href="#" class="btn btn-buyNow">Buy Now</a>
+                                    <a href="/products/{{product.product_sku}}.html" class="btn btn-moreInfo">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div id="t-shirts" class="product-sub-category">
+                    <h2>T-Shirts</h2>
+                    <div class="product-sub-category_grid">
+                        {% for product in t-shirts %}
+                        <div class="product-sub-category_item card card-product">
+                            <img class="product-thumbnail card_blockMedia" src="/assets/images/{{product.product_image}}"
+                                alt="{{product.product_name}}">
+                            <div class="card_blockContent">
+                                <div class="card_blockContent-header">
+                                    <a href="/products/{{product.product_sku}}.html">
+                                        <h3>{{ product.product_name }}</h3>
+                                    </a>
+                                    <p>Price: ${{ product.product_price }}</p>
+                                </div>
+                                <p>
+                                    {{ product.product_short_description }}
+                                </p>
+                                <div class="thumbnail-buttons card_blockCTA">
+                                    <a href="#" class="btn btn-buyNow">Buy Now</a>
+                                    <a href="/products/{{product.product_sku}}.html" class="btn btn-moreInfo">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div id="posters" class="product-sub-category">
+                    <h2>Posters</h2>
+                    <div class="product-sub-category_grid">
+                        {% for product in posters %}
+                        <div class="product-sub-category_item card card-product">
+                            <img class="product-thumbnail card_blockMedia" src="/assets/images/{{product.product_image}}"
+                                alt="{{product.product_name}}">
+                            <div class="card_blockContent">
+                                <div class="card_blockContent-header">
+                                    <a href="/products/{{product.product_sku}}.html">
+                                        <h3>{{ product.product_name }}</h3>
+                                    </a>
+                                    <p>Price: ${{ product.product_price }}</p>
+                                </div>
+                                <p>
+                                    {{ product.product_short_description }}
+                                </p>
+                                <div class="thumbnail-buttons card_blockCTA">
+                                    <a href="#" class="btn btn-buyNow">Buy Now</a>
+                                    <a href="/products/{{product.product_sku}}.html" class="btn btn-moreInfo">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div id="albums" class="product-sub-category">
+                    <h2>Albums</h2>
+                    <div class="product-sub-category_grid">
+                        {% for product in albums %}
+                        <div class="product-sub-category_item card card-product">
+                            <img class="product-thumbnail card_blockMedia" src="/assets/images/{{product.product_image}}"
+                                alt="{{product.product_name}}">
+                            <div class="card_blockContent">
+                                <div class="card_blockContent-header">
+                                    <a href="/products/{{product.product_sku}}.html">
+                                        <h3>{{ product.product_name }}</h3>
+                                    </a>
+                                    <p>Price: ${{ product.product_price }}</p>
+                                </div>
+                                <p>
+                                    {{ product.product_short_description }}
+                                </p>
+                                <div class="thumbnail-buttons card_blockCTA">
+                                    <a href="#" class="btn btn-buyNow">Buy Now</a>
+                                    <a href="/products/{{product.product_sku}}.html" class="btn btn-moreInfo">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </article>
+        <aside class="sidebar">
+            <div class="product-filter">
+                <h2>Filter Products</h2>
+                <h3>Categories</h3>
+                <ul>
+                    <li><input type="radio" name="sub-cat" onclick="subCat(1)">Hoodies</li>
+                    <li><input type="radio" name="sub-cat" onclick="subCat(2)">T-Shirts</li>
+                    <li><input type="radio" name="sub-cat" onclick="subCat(3)">Albums</li>
+                    <li><input type="radio" name="sub-cat" onclick="subCat(4)">Posters</li>
+                </ul>
+                <button class="btn" onclick="reload()">Reset Filters</button>
+            </div>
+
+        </aside>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

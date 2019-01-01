@@ -1,0 +1,25 @@
+// General Button styling
+.btn{
+    background: #BDBDBD;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    &:hover{
+        background: #757575;
+    }
+}
+.btn-buyNow{
+    color: #fff;
+    background: #ef5350;
+    &:hover{
+        background: #e53935;
+    }
+}
+// .btn-moreInfo{
+//     color: #fff;
+//     background: #42A5F5;
+//     &:hover{
+//         background: #1E88E5;
+//     }
+// }
