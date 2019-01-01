@@ -1,0 +1,17 @@
+<div class="product-sub-category_item card card-product">
+    <img class="product-thumbnail card_blockMedia" src="/assets/images/{{product.product_image}}" alt="{{product.product_name}}">
+    <div class="card_blockContent">
+        <div class="card_blockContent-header">
+            <a href="/products/{{product.product_sku}}.html">
+                <h3>{{ product.product_name }}</h3>
+            </a>
+            <p>Price: ${{ product.product_price }}</p>
+        </div>
+        <p>
+            {{ product.product_short_description }}
+        </p>
+        <div class="thumbnail-buttons card_blockCTA">
+            <a href="/products/{{product.product_sku}}.html" class="btn btn-moreInfo">More Info</a>
+        </div>
+    </div>
+</div>

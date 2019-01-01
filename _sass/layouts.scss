@@ -126,3 +126,18 @@ aside.sidebar{
         margin: 0px 10%;
     }
 }
+
+// Single Product
+.single-product article.page-content{
+    grid-column: 1 / 4;
+    @media screen and (max-width: 768px){
+        grid-column: 1 / 2;
+    }
+}
+aside.sidebar{
+
+    @media screen and (max-width: 768px){
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}

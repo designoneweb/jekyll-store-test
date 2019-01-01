@@ -1,7 +1,3 @@
----
-related-products: {{page.product_sub_category}}
----
-
 <!DOCTYPE html>
 <html lang="en">
 {% include head-info-product.html %}
@@ -18,8 +14,8 @@ related-products: {{page.product_sub_category}}
             <p>Price: ${{ page.product_price }}</p>
             <p>{{ page.product_description }}</p>
         </article>
-        <aside class="sidebar" style="border-left: 1px solid;">
-            <h3>Sidebar</h3>
+        <aside class="sidebar">
+            {% include related-loop.html %}
 
         </aside>
     </main>

@@ -126,6 +126,17 @@ aside.sidebar {
   width: 80%;
   margin: 0px 10%; }
 
+.single-product article.page-content {
+  grid-column: 1 / 4; }
+  @media screen and (max-width: 768px) {
+    .single-product article.page-content {
+      grid-column: 1 / 2; } }
+
+@media screen and (max-width: 768px) {
+  aside.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; } }
+
 .btn {
   background: #BDBDBD;
   padding: 10px 15px;
@@ -140,6 +151,10 @@ aside.sidebar {
   background: #ef5350; }
   .btn-buyNow:hover {
     background: #e53935; }
+
+.single-product .btn-moreInfo {
+  width: 100%;
+  text-align: center; }
 
 .card {
   overflow: hidden;
@@ -159,3 +174,6 @@ aside.sidebar {
     text-decoration: none; }
   .card hr {
     color: #f1f1f1; }
+
+.sidebar .card {
+  margin-bottom: 40px; }

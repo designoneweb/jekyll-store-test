@@ -1,0 +1,24 @@
+<h3>Related Products</h3>
+            {% if page.product_sub_category == "T-Shirts" %}
+            {% for product in t-shirts limit:3 %}
+            {% include product-loop.html %}
+            {% endfor %}
+            {% endif %}
+
+            {% if page.product_sub_category == "Hoodies" %}
+            {% for product in hoodies limit:3 %}
+            {% include product-loop.html %}
+            {% endfor %}
+            {% endif %}
+
+            {% if page.product_sub_category == "Albums" %}
+            {% for product in albums limit:3 %}
+            {% include product-loop.html %}
+            {% endfor %}
+            {% endif %}
+            
+            {% if page.product_sub_category == "Posters" %}
+            {% for product in posters limit:3 %}
+            {% include product-loop.html %}
+            {% endfor %}
+            {% endif %}
