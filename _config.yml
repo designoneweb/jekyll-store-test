@@ -5,3 +5,5 @@ page_gen:
     template: 'single-product'
     name: 'product_sku'
     dir: 'products'
+
+include: [.htaccess]

@@ -10,6 +10,8 @@ Currently I've got:
 + Product Archive (index.html) w/ filter
 + Single Product w/ related products
 
+You can view the progress here https://gallant-hypatia-fe03ec.netlify.com/
+
 ## Problems and Bugs
 Again, I'm new to Jekyll and Liquid. I'm also a JavaScript noob. While I've got most of the features more or less working, I'm having a real problems with Related Products. I can't seem to exclude the current product page from the list of Related Products. This may be because the __data_page_generator__ plugin generates product pages directly from `_data` to `/products` within the `_site` folder, bypassing creating a `_collection`.
 

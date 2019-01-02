@@ -122,7 +122,9 @@ aside.sidebar {
   display: grid;
   -ms-grid-columns: 20vw (1fr)[4] 20vw;
       grid-template-columns: 20vw repeat(4, 1fr) 20vw;
-      grid-template-areas: "header header header header header header" ". main main main main ." "footer footer footer footer footer footer";
+      grid-template-areas: "header header header header header header"
+ ". main main main main ."
+ "footer footer footer footer footer footer";
 }
 
 @media screen and (max-width: 768px) {
@@ -130,7 +132,9 @@ aside.sidebar {
   .single-product {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "header" "main" "footer";
+        grid-template-areas: "header"
+ "main"
+ "footer";
   }
 }
 
