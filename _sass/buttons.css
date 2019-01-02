@@ -18,4 +18,9 @@
 .btn-buyNow:hover {
   background: #e53935;
 }
+
+.single-product .btn-moreInfo {
+  width: 100%;
+  text-align: center;
+}
 /*# sourceMappingURL=buttons.css.map */

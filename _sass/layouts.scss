@@ -1,34 +1,40 @@
 // Grid Areas
-header{
+header {
     background: #f1f1f1;
     border-bottom: 1px solid rgb(230, 229, 229);
     grid-area: header;
-    img{
+
+    img {
         height: 100px;
     }
-    .nav-bar{
+
+    .nav-bar {
         width: 60%;
         margin: 0 auto;
         padding: 10px 0;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        @media screen and (max-width: 768px){
+
+        @media screen and (max-width: 768px) {
             flex-direction: column;
             align-items: center;
             width: 100%;
 
         }
-        .branding{
+
+        .branding {
             display: flex;
             align-items: center;
-            span{
+
+            span {
                 margin-left: 10px;
                 font-size: 48px;
                 font-weight: bolder;
             }
         }
-        nav a{
+
+        nav a {
             padding-left: 20px;
             text-decoration: none;
             text-transform: uppercase;
@@ -36,28 +42,35 @@ header{
         }
     }
 }
-main{
+
+main {
     grid-area: main;
-    @media screen and (max-width: 768px){
+
+    @media screen and (max-width: 768px) {
         padding: 20px;
     }
 }
-footer{
+
+footer {
     background: #ccc;
     height: 100px;
     grid-area: footer;
 }
-article.page-content{
+
+article.page-content {
     grid-column: 1 / 4;
-    @media screen and (max-width: 768px){
+
+    @media screen and (max-width: 768px) {
         grid-column: 1 / 2;
     }
 }
-aside.sidebar{
+
+aside.sidebar {
     grid-column: 4 / 5;
     // background: pink;
     padding: 0 20px;
-    @media screen and (max-width: 768px){
+
+    @media screen and (max-width: 768px) {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
@@ -66,7 +79,8 @@ aside.sidebar{
 
 
 // Product Archive
-.product-archive, .single-product {
+.product-archive,
+.single-product {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 20vw repeat(4, 1fr) 20vw;
@@ -74,18 +88,21 @@ aside.sidebar{
         "header header header header header header"
         ". main main main main ."
         "footer footer footer footer footer footer";
-        @media screen and (max-width: 768px){
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-                "header"
-                "main"
-                "footer";
-        }
-    main{
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+    main {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 40px;
-        @media screen and (max-width: 768px){
+
+        @media screen and (max-width: 768px) {
             grid-template-columns: 1fr;
             grid-template-rows: auto;
         }
@@ -96,7 +113,7 @@ aside.sidebar{
     width: 100%;
 }
 
-.product-sub-category{
+.product-sub-category {
     margin-bottom: 80px;
 }
 
@@ -105,20 +122,25 @@ aside.sidebar{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 40px;
 }
-.thumbnail-buttons{
+
+.thumbnail-buttons {
     display: flex;
     justify-content: space-between;
 }
-.product-filter{
-    ul{
+
+.product-filter {
+    ul {
         list-style-type: none;
         margin: 0 0 40px;
         padding: 0;
-        li{
+
+        li {
             padding: 0;
+            margin-bottom: 20px;
         }
     }
-    button{
+
+    button {
         position: relative;
         border: none;
         // display: inline-block;
@@ -128,15 +150,17 @@ aside.sidebar{
 }
 
 // Single Product
-.single-product article.page-content{
+.single-product article.page-content {
     grid-column: 1 / 4;
-    @media screen and (max-width: 768px){
+
+    @media screen and (max-width: 768px) {
         grid-column: 1 / 2;
     }
 }
-aside.sidebar{
 
-    @media screen and (max-width: 768px){
+aside.sidebar {
+
+    @media screen and (max-width: 768px) {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
